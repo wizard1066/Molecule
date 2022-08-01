@@ -11,6 +11,10 @@
 		EFEE3096288D332C00B54FC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE3095288D332C00B54FC0 /* ContentView.swift */; };
 		EFEE3098288D332E00B54FC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEE3097288D332E00B54FC0 /* Assets.xcassets */; };
 		EFEE309B288D332E00B54FC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEE309A288D332E00B54FC0 /* Preview Assets.xcassets */; };
+		EFEE30A2288D349E00B54FC0 /* SceneKitScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = EFEE30A1288D349E00B54FC0 /* SceneKitScene.scn */; };
+		EFEE30A42890629500B54FC0 /* Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE30A32890629500B54FC0 /* Extra.swift */; };
+		EFEE30A62895574E00B54FC0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE30A52895574E00B54FC0 /* Fonts.swift */; };
+		EFEE30AA289557C100B54FC0 /* Neuton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFEE30A9289557C100B54FC0 /* Neuton-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		EFEE3095288D332C00B54FC0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EFEE3097288D332E00B54FC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFEE309A288D332E00B54FC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFEE30A1288D349E00B54FC0 /* SceneKitScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = SceneKitScene.scn; sourceTree = "<group>"; };
+		EFEE30A32890629500B54FC0 /* Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extra.swift; sourceTree = "<group>"; };
+		EFEE30A52895574E00B54FC0 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		EFEE30A7289557A200B54FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EFEE30A9289557C100B54FC0 /* Neuton-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neuton-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,13 @@
 		EFEE3092288D332C00B54FC0 /* Molecule */ = {
 			isa = PBXGroup;
 			children = (
+				EFEE30A7289557A200B54FC0 /* Info.plist */,
+				EFEE30A52895574E00B54FC0 /* Fonts.swift */,
+				EFEE30A8289557C100B54FC0 /* Fonts */,
 				EFEE3093288D332C00B54FC0 /* MoleculeApp.swift */,
 				EFEE3095288D332C00B54FC0 /* ContentView.swift */,
+				EFEE30A32890629500B54FC0 /* Extra.swift */,
+				EFEE30A1288D349E00B54FC0 /* SceneKitScene.scn */,
 				EFEE3097288D332E00B54FC0 /* Assets.xcassets */,
 				EFEE3099288D332E00B54FC0 /* Preview Content */,
 			);
@@ -65,6 +79,14 @@
 				EFEE309A288D332E00B54FC0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFEE30A8289557C100B54FC0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EFEE30A9289557C100B54FC0 /* Neuton-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFEE309B288D332E00B54FC0 /* Preview Assets.xcassets in Resources */,
+				EFEE30A2288D349E00B54FC0 /* SceneKitScene.scn in Resources */,
+				EFEE30AA289557C100B54FC0 /* Neuton-Regular.ttf in Resources */,
 				EFEE3098288D332E00B54FC0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFEE30A62895574E00B54FC0 /* Fonts.swift in Sources */,
 				EFEE3096288D332C00B54FC0 /* ContentView.swift in Sources */,
 				EFEE3094288D332C00B54FC0 /* MoleculeApp.swift in Sources */,
+				EFEE30A42890629500B54FC0 /* Extra.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +296,7 @@
 				DEVELOPMENT_TEAM = CWGS87U262;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Molecule/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +326,7 @@
 				DEVELOPMENT_TEAM = CWGS87U262;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Molecule/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
